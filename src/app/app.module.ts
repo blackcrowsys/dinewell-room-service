@@ -7,6 +7,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgxPermissionsModule} from 'ngx-permissions';
 
 // for AoT,  returns a Object that can load Translations using Http and .json
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -21,6 +22,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     BrowserModule,
       HttpClientModule,
       NgbModule.forRoot(),
+      NgxPermissionsModule.forRoot(),
       TranslateModule.forRoot({
           loader: {
               provide: TranslateLoader,
