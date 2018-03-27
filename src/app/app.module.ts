@@ -8,6 +8,7 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {NgxPermissionsModule} from 'ngx-permissions';
+import { AppRoutingModule } from './/app-routing.module';
 
 // for AoT,  returns a Object that can load Translations using Http and .json
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -29,7 +30,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
               useFactory: HttpLoaderFactory,
               deps: [HttpClient]
           }
-      })
+      }),
+      AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
