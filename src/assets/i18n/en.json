@@ -1,0 +1,23 @@
+{
+    "HOME": {
+        "TITLE": "Hello ",
+        "SELECT": "Change language"
+    },
+    "COMMON": {
+        "ACTION": "Action",
+        "VIEW": "View",
+        "DELETE": "Delete"
+    },
+    "LEGAL": {
+        "COPYRIGHT": "© Copyright BlackCrowSystems Limited, 2015-2018. All Rights Reserved.",
+        "LICENSE": "License Agreement",
+        "ABOUT": "About"
+    },
+    "LOGIN": {
+        "TITLE": "Login",
+        "USERNAME": "Username",
+        "PASSWORD": "Password",
+        "URL": "URL",
+        "SUBMIT": "Submit"
+    }
+}
